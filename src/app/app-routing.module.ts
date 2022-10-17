@@ -5,9 +5,11 @@ import { AddCategoriesComponent } from './components/categories/add-categories/a
 import { CategoriesListComponent } from './components/categories/categories-list/categories-list.component';
 import { EditCategoriesComponent } from './components/categories/edit-categories/edit-categories.component';
 import { HomeComponent } from './layout/home/home.component';
+import { WorksComponent } from './layout/works/works.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
+  {path:'works',component:WorksComponent},
   {path:'categories',component:CategoriesListComponent},
   {path:'addCategorie',component:AddCategoriesComponent},
   {path:'editCategories/:id',component:EditCategoriesComponent},

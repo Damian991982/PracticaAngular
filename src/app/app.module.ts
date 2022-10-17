@@ -12,6 +12,7 @@ import { AddCategoriesComponent } from './components/categories/add-categories/a
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditCategoriesComponent } from './components/categories/edit-categories/edit-categories.component';
 import { ApistoreComponent } from './components/apis/apistore/apistore.component';
+import { WorksComponent } from './layout/works/works.component';
 
 
 
@@ -24,7 +25,8 @@ import { ApistoreComponent } from './components/apis/apistore/apistore.component
     CategoriesListComponent,
     AddCategoriesComponent,
     EditCategoriesComponent,
-    ApistoreComponent
+    ApistoreComponent,
+    WorksComponent
   ],
   imports: [
     BrowserModule,
