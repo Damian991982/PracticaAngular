@@ -9,7 +9,7 @@ import { HomeComponent } from './layout/home/home.component';
 import { CategoriesListComponent } from './components/categories/categories-list/categories-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AddCategoriesComponent } from './components/categories/add-categories/add-categories.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditCategoriesComponent } from './components/categories/edit-categories/edit-categories.component';
 import { ApistoreComponent } from './components/apis/apistore/apistore.component';
 
@@ -31,6 +31,7 @@ import { ApistoreComponent } from './components/apis/apistore/apistore.component
     AppRoutingModule,
     HttpClientModule,
     HttpClientModule,
+    FormsModule,
     ReactiveFormsModule,
 
 
