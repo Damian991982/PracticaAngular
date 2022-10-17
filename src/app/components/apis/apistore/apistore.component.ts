@@ -16,6 +16,7 @@ export class ApistoreComponent implements OnInit {
   constructor(private httpClient:HttpClient,private _apiStoreService:ApistoreService) { }
 
   ngOnInit(): void {
+    this.getProducts();
   }
 
   getProducts(){

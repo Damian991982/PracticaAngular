@@ -9,8 +9,9 @@ import { ApiStore } from '../models/apistore.model';
 })
 export class ApistoreService {
 
-  apistorepoint:string='fakestoreapi'
-  url=environment.endpoint + this.apistorepoint
+  apistorepoint:string='https://fakestoreapi.com/products'
+  //url=environment.endpoint + this.apistorepoint
+  url=this.apistorepoint;
 
   constructor(private http:HttpClient) { }
 

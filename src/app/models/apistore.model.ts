@@ -1,9 +1,9 @@
 export class ApiStore
 {
-  ID: number=0;
-  Title: string='';
-  Price: string='';
-  Category: string='';
-  Description: string='';
-  Image: string='';
+  id: number=0;
+  title: string='';
+  price: string='';
+  category: string='';
+  description: string='';
+  image: string='';
 }
