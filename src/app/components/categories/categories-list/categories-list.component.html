@@ -1,0 +1,31 @@
+<br>
+<br>
+<br>
+<div class="container mt-5">
+  <h1 class="mb-3">Categories</h1>
+
+  <table class="table" *ngIf="categories && categories.length > 0">
+    <thead>
+      <tr>
+        <th>CategoryID</th>
+        <th>CategoryName</th>
+        <th>Description</th>
+        <th>Picture</th>
+        <th><button class="btn btn-success" routerLink="/addCategorie">Add</button></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let categorie of categories">
+        <td>{{categorie.CategoryID}}</td>
+        <td>{{categorie.CategoryName}}</td>
+        <td>{{categorie.Description}}</td>
+        <td>{{categorie.Picture}}</td>
+        <td><Button class="btn btn-info" [routerLink]="['/editCategories',categorie.CategoryID]">View</Button></td>
+      </tr>
+
+    </tbody>
+
+  </table>
+  <p *ngIf="!categories || categories.length <= 0">No categories found</p>
+
+</div>

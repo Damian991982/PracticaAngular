@@ -1,0 +1,67 @@
+/* Btn */
+.btn {
+  padding: 10px 24px;
+  border-radius: 0;
+  border-width: 2px;
+  font-weight: 500;
+}
+
+.btn-brand,
+.btn-brand:focus {
+  background-color: var(--c-brand);
+  color: white;
+  border-color: var(--c-brand);
+}
+
+.btn-brand:hover {
+  background-color: transparent;
+  color: var(--c-brand);
+  border-color: var(--c-brand);
+}
+
+
+/* Home */
+#home {
+  /*background-image: url(../images/hero.jpg);*/
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* Services */
+.service-icon {
+  width: 60px;
+  height: 60px;
+  background-color: var(--c-brand);
+  color: white;
+  font-size: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.custom-link span {
+  font-weight: 700;
+}
+
+.custom-link i {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--c-brand);
+  border-radius: 100px;
+  color: white;
+  margin-left: 6px;
+  transition: var(--transition);
+}
+
+.custom-link:hover i {
+  transform: translateX(6px);
+}

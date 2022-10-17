@@ -1,0 +1,45 @@
+<br>
+<br>
+<br>
+<h2>Store Products</h2>
+<!--Container for all products-->
+<div class="container mb-5 mt-5">
+    <div class="row">
+
+            <!--Card 1-->
+            <div class="col-md-4" *ngFor="let product of products">
+                <div class="card mt-3">
+                    <div class="product-1 align-items-center p-2 text-center">
+                        <img src="" alt="{{product.Image}}" class="rounded" width="100" />
+                        <h5>{{product.Title}}</h5>
+                        <!--Card info-->
+                        <div class="mt-3 info">
+                            <span class="text1 d-block">{{product.Description}}</span>
+                            <br />
+                            <h5>{{product.Price}}</h5>
+                        </div>
+                        <div class="cost mt-3 text-dark">
+                            <span>{{product.Price}}</span>
+                            <div class="start mt-3 align-items-center">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--button for cards-->
+                    <div class="p-3 shoe text-center text-white mt-3 cursor">
+                        <span class="text-uppercase">Add to cart</span>
+                    </div>
+                </div>
+
+            </div>
+            <!--Card 1 end-->
+
+
+    </div>
+</div>
+<!--Container for all products end-->
+

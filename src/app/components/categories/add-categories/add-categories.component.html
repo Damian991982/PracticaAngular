@@ -1,0 +1,47 @@
+<br>
+<br>
+<br>
+<div class="container mt-5">
+  <h1 class="mb-3">Add Categorie</h1>
+</div>
+
+<div class="row">
+  <div class="col-6">
+
+    <form [formGroup]="Form" (ngSubmit)="addCategorie()">
+      <div class="form-group">
+        <label  for="categoryName" class="form-label">CategoryName</label>
+        <input formControlName="CategoryName" type="text" class="form-control" id="categoryName" categoryName="categoryName" [(ngModel)]="addCategorieRequest.CategoryName">
+        <span class="form-text text-danger"
+                  *ngIf="notValidField('CategoryName')">
+                  <br>
+              <strong> Category Name min: {{minLengthCategoryName}}, max: {{maxLengthCategoryName}} characters. </strong>
+            </span>
+      </div>
+
+      <div class="form-group">
+        <label for="description" class="form-label">Description</label>
+        <input formControlName="Description"  type="text" class="form-control" id="description" description="description" [(ngModel)]="addCategorieRequest.Description">
+        <span class="form-text text-danger"
+                  *ngIf="notValidField('Description')">
+                  <br>
+                  <strong> Description max: {{maxLengthDescription}} characters. </strong>
+            </span>
+      </div>
+
+      <div class="form-group">
+        <label for="picture" class="form-label">Picture</label>
+        <input formControlName="Picture" type="text" class="form-control" id="picture" picture="picture" [(ngModel)]="addCategorieRequest.Picture">
+      </div>
+      <br>
+
+
+
+      <button type="submit" class="btn btn-primary" style="margin: 5px;">Save</button>
+      <button type="button" class="btn btn-warning" routerLink="/categories">Return</button>
+    </form>
+
+  </div>
+
+</div>
+
